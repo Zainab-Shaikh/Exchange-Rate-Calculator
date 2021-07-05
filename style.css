@@ -1,0 +1,107 @@
+:root {
+  --primary-color: #ffe500;
+  --secondary-color: #f482f4;
+  --tertiary-color: black;
+  font-family: "Bebas Neue", cursive;
+  font-family: "Dela Gothic One", cursive;
+  font-family: "Khand", sans-serif;
+}
+body {
+  background-color: var(--tertiary-color);
+  color: white;
+  /* height: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 4em;
+  margin-bottom: 4em;
+  justify-content: space-around;
+}
+.left,
+.right {
+  margin-top: 3rem;
+  /* flex-basis: 30%; */
+  align-self: center;
+}
+h1 {
+  text-align: center;
+  flex-basis: 100%;
+  font-family: "Bebas Neue", cursive;
+  font-size: 4rem;
+  letter-spacing: 0.2em;
+}
+
+select,
+button,
+input {
+  display: block;
+  padding: 0.5em 4em;
+  margin-bottom: 1em;
+}
+input {
+  padding: 0.5em 0.4em;
+}
+img,
+button {
+  margin: 1em auto;
+}
+select {
+  background-color: var(--primary-color);
+  border-style: none;
+  cursor: pointer;
+}
+input,
+select,
+button,
+option {
+  font-family: "Khand", sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+button {
+  background-color: var(--secondary-color);
+  border-radius: 50px;
+  border-style: none;
+  padding-left: 2em;
+  padding-right: 2em;
+  font-size: 1rem;
+  color: var(--tertiary-color);
+  cursor: pointer;
+  transition: transform 0.1s linear;
+}
+button:hover {
+  box-shadow: 0 0 10px #c465c4;
+  transform: scale(1.05);
+}
+.change_text {
+  color: white;
+}
+@media (max-width: 686px) {
+  h1 {
+    font-size: 3rem;
+  }
+  .container {
+    flex-basis: 50%;
+  }
+  .left {
+    flex-basis: 50%;
+  }
+  select {
+    padding-left: 0.5em;
+  }
+}
+@media (max-width: 360px) {
+  select {
+    display: block;
+    /* width: 100%; */
+    max-width: 270px;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+  }
+}
